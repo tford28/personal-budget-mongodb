@@ -26,7 +26,7 @@ nav.menu ul li a {
     display: block;
     padding: 0 20px;
     line-height: 44px;
-    font-size: 1.9em;
+    font-size: 1.7em;
     text-decoration: none;
     color: #fff;
     margin: 0;
@@ -97,10 +97,14 @@ header.hero h2 {
     }
 
 p {
-    font-size: 12pt;
+    font-size: 11pt;
 }
 
 h3 {
-    font-size: 2em;
+    font-size: 1.6em;
+}
+
+footer {
+    font-size: 1.6em;
 }
 }
