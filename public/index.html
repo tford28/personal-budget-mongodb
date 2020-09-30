@@ -18,7 +18,7 @@
   <nav class = "menu">
         <ul>
             <!-- This is a A11y Change, in CSS-->
-            <li><a href="http://165.227.200.135/pb">Homepage</a></li>
+            <li><a href="/index.html">Homepage</a></li>
             <li><a href="/about.html">About</a></li>
             <li><a href="/login.html">Login</a></li>
             <li><a href="https://google.com">Google</a></li>
@@ -123,6 +123,12 @@
                     '#ff6384',
                     '#36a2eb',
                     '#fd6b19',
+                    '#2dd654',
+                    '#d62dd6',
+                    '#34c2c0',
+                    '#abc234',
+                    '#ff69b4',
+                    '#ffc0cb',
                 ],
             }
         ],
@@ -140,7 +146,7 @@
         function getBudget() {
             axios.get('/budget')
             .then(function (res) {
-                console.log(res);
+                console.log(res.data);
                 for (var i = 0; i < res.data.myBudget.length; i++) {
                     dataSource.datasets[0].data[i] = res.data.myBudget[i].budget;
                     dataSource.labels[i] = res.data.myBudget[i].title;
