@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const port = 3000;
+var budget = require('./budget.json');
 
 app.use('/', express.static('public'));
 
@@ -9,7 +10,6 @@ app.get('/hello', (req, res) => {
 });
 
 app.get('/budget', (req,res) => {
-    var budget = require("./budget.json");
     res.json(budget);
 });
 
