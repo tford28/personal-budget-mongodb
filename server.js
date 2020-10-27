@@ -4,6 +4,8 @@ const app = express();
 const port = 3000;
 var budget = require('./budget.json');
 
+const mongoose = require('mongoose');
+
 app.use(cors());
 
 app.get('/budget', (req,res) => {
